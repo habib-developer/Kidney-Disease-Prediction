@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Chronic_Kidney_Disease_PredictionML.Model;
-using Chronic_Kidney_Disease_PredictionML;
 
 namespace Chronic_Kidney_Disease_Prediction.Controllers
 {
