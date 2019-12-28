@@ -1,0 +1,166 @@
+﻿@model Chronic_Kidney_Disease_PredictionML.Model.ModelInput
+
+@{
+    ViewData["Title"] = "Predict";
+}
+    <div class="row">
+        <form asp-action="Index">
+            <div class="row">
+                <div class="col-md-4">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Age" class="control-label"></label>
+                        <input asp-for="Age" class="form-control" />
+                        <span asp-validation-for="Age" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Bp" class="control-label"></label>
+                        <input asp-for="Bp" class="form-control" />
+                        <span asp-validation-for="Bp" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Sg" class="control-label"></label>
+                        <input asp-for="Sg" class="form-control" />
+                        <span asp-validation-for="Sg" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Al" class="control-label"></label>
+                        <input asp-for="Al" class="form-control" />
+                        <span asp-validation-for="Al" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Su" class="control-label"></label>
+                        <input asp-for="Su" class="form-control" />
+                        <span asp-validation-for="Su" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Rbc" class="control-label"></label>
+                        <input asp-for="Rbc" class="form-control" />
+                        <span asp-validation-for="Rbc" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Pc" class="control-label"></label>
+                        <input asp-for="Pc" class="form-control" />
+                        <span asp-validation-for="Pc" class="text-danger"></span>
+                    </div>
+
+
+
+
+
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label asp-for="Pcc" class="control-label"></label>
+                        <input asp-for="Pcc" class="form-control" />
+                        <span asp-validation-for="Pcc" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Ba" class="control-label"></label>
+                        <input asp-for="Ba" class="form-control" />
+                        <span asp-validation-for="Ba" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Bgr" class="control-label"></label>
+                        <input asp-for="Bgr" class="form-control" />
+                        <span asp-validation-for="Bgr" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Bu" class="control-label"></label>
+                        <input asp-for="Bu" class="form-control" />
+                        <span asp-validation-for="Bu" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Sc" class="control-label"></label>
+                        <input asp-for="Sc" class="form-control" />
+                        <span asp-validation-for="Sc" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Sod" class="control-label"></label>
+                        <input asp-for="Sod" class="form-control" />
+                        <span asp-validation-for="Sod" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Pot" class="control-label"></label>
+                        <input asp-for="Pot" class="form-control" />
+                        <span asp-validation-for="Pot" class="text-danger"></span>
+                    </div>
+
+
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label asp-for="Hemo" class="control-label"></label>
+                        <input asp-for="Hemo" class="form-control" />
+                        <span asp-validation-for="Hemo" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Pcv" class="control-label"></label>
+                        <input asp-for="Pcv" class="form-control" />
+                        <span asp-validation-for="Pcv" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Wbcc" class="control-label"></label>
+                        <input asp-for="Wbcc" class="form-control" />
+                        <span asp-validation-for="Wbcc" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Rbcc" class="control-label"></label>
+                        <input asp-for="Rbcc" class="form-control" />
+                        <span asp-validation-for="Rbcc" class="text-danger"></span>
+                    </div>
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" asp-for="Htn" /> @Html.DisplayNameFor(model => model.Htn)
+                        </label>
+                    </div>
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" asp-for="Dm" /> @Html.DisplayNameFor(model => model.Dm)
+                        </label>
+                    </div>
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" asp-for="Cad" /> @Html.DisplayNameFor(model => model.Cad)
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Appet" class="control-label"></label>
+                        <input asp-for="Appet" class="form-control" />
+                        <span asp-validation-for="Appet" class="text-danger"></span>
+                    </div>
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" asp-for="Pe" /> @Html.DisplayNameFor(model => model.Pe)
+                        </label>
+                    </div>
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" asp-for="Ane" /> @Html.DisplayNameFor(model => model.Ane)
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Predict" class="btn btn-primary" />
+            </div>
+        </form>
+        @if (ViewBag.Result != null)
+        {
+            <div class="offset-md-1 col-md-3">
+                <label>Have Chronic Kidney Disease:</label>
+                <p>@ViewBag.Result.Prediction</p>
+                <label>Score:</label>
+                <p>@ViewBag.Result.Score</p>
+            </div>
+        }
+
+    </div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
